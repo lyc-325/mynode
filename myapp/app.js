@@ -53,6 +53,7 @@ var url = 'http://www.ziroom.com/';
 http.get(url, function(res) {
     var html = '';
     // 获取页面数据
+    console.log(res,212121)
     res.on('data', function(data) {
         html += data;
     });
